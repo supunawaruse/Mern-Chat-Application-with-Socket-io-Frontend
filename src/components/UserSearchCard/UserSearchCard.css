@@ -1,0 +1,17 @@
+
+.dark-search-card{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    background-color: #262626;
+    border-bottom: 1px solid #4040404d;
+}
+.light-search-card{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.user-img {
+    border-radius: 50%;
+}
