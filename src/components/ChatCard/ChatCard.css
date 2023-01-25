@@ -1,0 +1,23 @@
+.chat-card{
+    margin-bottom: 18px;
+}
+
+.chat-card .chat-card-img{
+    border-radius: 50%;
+}
+.chat-card .card-active-status{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: chartreuse;
+}
+#dark .chat-card .card-right{
+    background-color: #8f91982e
+}
+.chat-card .card-right{
+    background-color: #f6f6f9;
+}
+
+.chat-card .message{
+    margin-bottom: -4px;
+}

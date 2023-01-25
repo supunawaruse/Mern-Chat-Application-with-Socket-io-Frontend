@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Login from "./containers/Authentication/Login";
+import Register from "./containers/Authentication/Register";
+import Home from "./containers/Dashboard/Home";
+import NonProtectedRoute from "./routes/nonProtectedRoutes";
+import ProtectedRoute from "./routes/protectedRoutes";
+import { useGlobal } from "./contexts/GlobalContext";
 
-function App() {
+const App = () => {
+  const { theme } = useGlobal();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="app" id={theme}>
+        <Routes>
+          <Route
+            index
+            path="/auth-login"
+            element={<NonProtectedRoute component={<Login />} />}
+          />
+          <Route
+            path="/auth-register"
+            element={<NonProtectedRoute component={<Register />} />}
+          />
+
+          <Route path="/" element={<ProtectedRoute component={<Home />} />} />
+        </Routes>
+      </div>
   );
-}
+};
 
 export default App;

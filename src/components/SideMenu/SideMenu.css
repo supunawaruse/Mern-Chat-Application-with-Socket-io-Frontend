@@ -1,0 +1,112 @@
+.side-menu{
+    min-width: 75px;
+    max-width: 75px;
+    height: 100vh;
+    min-height: 570px;
+    background-color: #2e2e2e;
+    display: flex;
+    z-index: 9;
+    border-right: 1px solid #2e2e2e;
+}
+
+.profile-user{
+    height: 36px;
+    width: 36px;
+    background-color: white;
+    padding: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+.sidemenu-navigation{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.side-menu-nav{
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.side-menu-icons{
+    background-color: transparent !important;
+}
+
+#dark .profile-dropdown .profile-menu{
+    background-color: #333333;
+}
+
+#light .profile-dropdown .profile-dropdown-button{
+    color: black;
+}
+
+.profile-dropdown .profile-menu{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.profile-dropdown .profile-dropdown-button{
+    font-size: 14px;
+    background-color: transparent !important;
+    border: none;
+}
+
+.profile-dropdown .profile-dropdown-button:focus{
+    box-shadow: none !important;
+}
+
+#dark .profile-dropdown .profile-dropdown-item{
+    color: #8f9198;
+    font-weight: 500;
+}
+.profile-dropdown .profile-dropdown-item{
+    color: #212529;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.profile-dropdown .dropdown-toggle::after{
+    display: none;
+}
+
+.side-menu-tooltip{
+   left: 20;
+}
+
+@media (min-width: 991.99px){
+    .nav-pills .nav-link.active{
+        border-right: 3px solid #4eac6d;
+        border-radius: 0;
+    }
+
+    .profile-menu{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .side-menu {
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        min-width: 100%;
+        min-height: auto;
+        border-top: 1px solid #2e2e2e;
+    }
+    .nav-pills .nav-link.active{
+        border-top: 4px solid #4eac6d;
+        border-radius: 0;
+    }
+
+    .profile-menu{
+        margin-right: 5px;
+    }
+}

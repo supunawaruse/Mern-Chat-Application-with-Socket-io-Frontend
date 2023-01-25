@@ -1,0 +1,21 @@
+#light .chat-leftsidebar{
+    background-color: white;
+}
+
+#dark .chat-leftsidebar{
+    background-color: #262626;
+}
+
+.chat-leftsidebar{
+    height: calc(100vh - 60px);
+    position: relative;
+    box-shadow: 0 2px 4px #0f223a1f;
+}
+
+@media (min-width: 992px){
+    .chat-leftsidebar{
+        min-width: 400px;
+        max-width: 400px;
+        height: 100vh;
+    }
+}

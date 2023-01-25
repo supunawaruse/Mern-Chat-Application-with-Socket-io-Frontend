@@ -1,0 +1,46 @@
+.contacts-tab{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.contacts-tab .scroll-view{
+    overflow: hidden scroll;
+    height: 75vh;
+    padding: 0px 10px 20px 10px;
+}
+
+#dark .contacts-tab .contacts-search{
+    background-color: #2e2e2e;
+}
+.contacts-tab .contacts-search{
+    background-color: #f6f6f9;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dark .contacts-tab .contacts-input{
+    background-color: #2e2e2e;
+    color: #adb5bd;
+}
+.contacts-tab .contacts-input{
+    background-color: #f6f6f9;
+    border: none;
+    font-size: 13px;
+    height: 40px;
+}
+
+.contacts-tab .contacts-input:focus{
+    box-shadow: 0 0 0 0.1rem #4eac6d79;
+}
+
+#dark .contacts-tab .search-icon{
+    color: #adb5bd;
+    cursor: pointer;
+}
+.contacts-tab .search-icon{
+    color: #2e2e2e;
+    cursor: pointer;
+}
+  
