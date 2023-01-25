@@ -1,203 +1,38 @@
-#light .primary-text{
-    color: #495057 ;
-}
-#dark .primary-text{
-    color: #adb5bd ;
+.App {
+  text-align: center;
 }
 
-#light .logo-color{
-    color: #ffffff ;
-}
-#dark .logo-color{
-    color: #4eac6d ;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-#dark .active-text{
-    color: #ffffff;
-    font-weight: 500;
-}
-.active-text{
-    font-weight: 500;
-    color: #202020;
-}
-
-.white-text{
-    color: #ffffff;
-}
-#light .secondary-text{
-    color: #797c8c!important ;
-}
-#dark .secondary-text{
-    color: #8f9198!important;
-}
-
- /* width */
- ::-webkit-scrollbar {
-    width: 8px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
+}
 
-  /* Track */
-  #dark ::-webkit-scrollbar-track {
-    background: #262626;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  to {
+    transform: rotate(360deg);
   }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #8f9198;
-    border-radius: 20px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-
-.form-control{
-    border: 1px solid #ced4da71;
-}
-
-.auth-text-input{
-    padding: 12px;
-}
-
-.big-font-size{
-    font-size: 18px !important;
-}
-
-.normal-font-size{
-    font-size: 17px;
-}
-
-.small-font-size{
-    font-size: 16px;
-}
-
-.mini-font-size{
-    font-size: 15px;
-}
-
-.micro-font-size{
-    font-size: 14px;
-}
-
-.theme-text{
-    color: #4eac6d;
-    font-weight: 500;
-}
-
-.semi-bold-text{
-    font-weight: 600;
-}
-
-.mini-bold-text{
-    font-weight: 500;
-}
-
-.primary-button{
-    background-color: #4eac6d;
-    border: none !important;
-}
-
-.primary-button:hover{
-    background-color: #48a065;
-}
-
-.primary-button:focus{
-    background-color: #48a065;
-    box-shadow: none;
-}
-
-#dark .tab-header-text{
-    color:#adb5bd ;
-}
-
-.modal-body{
-    background-color: #262626;
-}
-
-.modal-main{
-    font-family: 'Poppins', sans-serif;
-}
-
-.modal-main .h4{
-    font-size: 16px;
-}
-
-.modal-header-light{
-    background-color: white;
-}
-
-.modal-header-dark{
-    background-color:#2b2b2b;
-    color:#adb5bd;
-    font-size: 10px !important;
-    border-bottom: 1px solid #4242423b;
-}
-
-.modal-header-dark button{
-    background-color:white;
-    padding: 6px !important;
-
-}
-
-.modal-body-light{
-    background-color: white;
-}
-.modal-body-light input:focus{
-    box-shadow: 0 0 0 0.1rem #4eac6d79;
-}
-
-.modal-body-dark{
-    background-color:#2b2b2b;
-    color:#adb5bd;
-}
-.modal-body-dark input{
-    background-color:#333333;
-    color: #8f9198;
-    border: 1px solid #333333;
-}
-
-.modal-body-dark input:focus{
-    background-color:#333333;
-    color: #8f9198;
-    border: 1px solid #333333;
-    box-shadow: 0 0 0 0.1rem #4eac6d79;
-}
-
-.modal-footer-light{
-    background-color: white;
-}
-
-.modal-footer-dark{
-    background-color:#2b2b2b;
-    color:#adb5bd;
-    border-top: 1px solid #4242423b;
-}
-
-.modal-main .users-list{
-    position: relative;
-    top: 10px;
-    height: 100px;
-    overflow: hidden scroll;
-}
-
-.modal-main .list-item-dark{
-    font-size: 13px;
-    background-color: #2b2b2b;
-    color: #adb5bd;
-}
-.modal-main .list-item-light{
-    font-size: 13px;
-    background-color: white;
-    color: #262626;
-}
-
-.modal-main .list-item-light:hover{
-    background-color: #e9ecef;
-}
-.modal-main .list-item-dark:hover{
-    background-color: #333333;
 }
